@@ -4,12 +4,8 @@ import Task from './Components/Task';
 import Tasks from './Components/Tasks';
 
 function App() {
-//   const [tasks, setTasks] = useState([
-//     { id: 1, name: "Walk the dog", reminder: true },
-//     { id: 2, name: "Feed the cat", reminder: true}
-// ])
-const [tasks, setTasks] = useState([])
 
+const [tasks, setTasks] = useState([])
 const [input, setInput] = useState("")
 
 const getData = () => {

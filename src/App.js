@@ -26,7 +26,15 @@ useEffect(() => {
 
 
 const addTask = () => {
-  const newTask = {
+  let newTask;
+  if (tasks.length === 0) {
+    newTask = {
+      id: 1,
+      name: input,
+      reminder: false
+   }
+  } else 
+   newTask = {
       id: tasks[tasks.length-1].id + 1,
       name: input,
       reminder: false
